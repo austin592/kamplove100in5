@@ -318,13 +318,13 @@ footer nav { display: flex; gap: 1.75rem; opacity: .7; }
 
 /* Index stats */
 .idx-stats {
-  display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--col-gap);
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--col-gap);
   max-width: var(--wrap); margin: 4.5rem auto 0; text-align: left;
 }
 .idx-stats .stat { border-top: 1px solid var(--rule-on-dark); padding-top: 1.5rem; }
 .idx-stats .stat .n {
   font-family: var(--serif);
-  font-size: clamp(var(--f-4xl), 7vw, var(--f-5xl));
+  font-size: clamp(var(--f-3xl), 5.5vw, var(--f-5xl));
   line-height: var(--lh-tight); margin-bottom: 0.75rem;
   font-weight: 500; font-variant-numeric: tabular-nums;
   letter-spacing: var(--tk-display);
@@ -333,7 +333,8 @@ footer nav { display: flex; gap: 1.75rem; opacity: .7; }
   font-family: var(--sans); font-size: var(--f-xs);
   letter-spacing: var(--tk-caps); text-transform: uppercase; opacity: .7;
 }
-@media (max-width: 860px) { .idx-stats { grid-template-columns: 1fr; gap: 2.5rem; } }
+@media (max-width: 1100px) { .idx-stats { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px)  { .idx-stats { grid-template-columns: 1fr; gap: 2.5rem; } }
 
 /* Location chips */
 .loc-chips {
